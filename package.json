@@ -1,0 +1,35 @@
+{
+  "name": "crud-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "lint": "ts-standard",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "ts-node-dev": "^2.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0",
+    "ts-standard": "^12.0.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    }
+  }
+}
